@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FOR PWA-->
+    <meta name="apple-mobile-web-app-title" content="HERE TITLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json" type="application/json" >
+    <!--END FOR PWA-->
+
+    <title>Document</title>
+</head>
+<body>
+  
+    
+
+<!--content goes here-->
+
+
+
+
+<!--service worker (bleibt unten)-->
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+            navigator.serviceWorker.register( "/service-worker.js").then(
+                function(success) {
+                    console.log( "ServiceWorker wurde erfolgreich registriert.", success);
+                }
+                ).catch(
+                function(error) {
+                    console.log( "ServiceWorker konnte leider nicht registriert werden.", error);
+                }
+            );
+        });
+    }
+</script>
+ <!--Service worker end-->
+</body>
+</html>

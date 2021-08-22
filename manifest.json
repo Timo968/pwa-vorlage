@@ -1,0 +1,11 @@
+{
+    "description": "HERE DESCRIPTION",
+    "display": "standalone",
+    "name": "HERE NAME",
+    "orientation": "portrait",
+    "short_name": "HERE SHORT_NAME",
+    "theme_color": "#colorcode",
+    "scope": "HTTPS://WWW.DOMAIN.COM",
+    "background_color": "#colorcode",
+    "start_url": "HTTPS://WWW.DOMAIN.COM"
+}
